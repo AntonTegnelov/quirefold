@@ -1,0 +1,16 @@
+name: quirefold
+
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: quirefold
+    hostname: quirefold
+    ports:
+      - "2223:22"
+    volumes:
+      - ..:/workspaces/quirefold:cached
+      - ${USERPROFILE}/.ssh/authorized_keys:/tmp/host_authorized_keys:ro
+    working_dir: /workspaces/quirefold
+    restart: unless-stopped

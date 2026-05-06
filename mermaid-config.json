@@ -1,0 +1,10 @@
+{
+  "theme": "neutral",
+  "themeVariables": {
+    "fontFamily": "Liberation Sans, DejaVu Sans, sans-serif"
+  },
+  "flowchart": { "htmlLabels": false, "useMaxWidth": false },
+  "sequence":  { "htmlLabels": false, "useMaxWidth": false },
+  "class":     { "htmlLabels": false, "useMaxWidth": false },
+  "state":     { "htmlLabels": false, "useMaxWidth": false }
+}

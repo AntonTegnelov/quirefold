@@ -1,0 +1,15 @@
+# Generated artifacts (praxis: all build output goes to outputs/)
+outputs/
+*.pdf
+
+# Source inputs — bring your own; never commit
+input/
+
+# Python build artifacts
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE / tooling state
+.ropeproject/
+.canary_test

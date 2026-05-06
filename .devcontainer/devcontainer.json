@@ -1,0 +1,16 @@
+{
+    "name": "quirefold",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "dev",
+    "workspaceFolder": "/workspaces/quirefold",
+    "remoteUser": "vscode",
+    "shutdownAction": "none",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "myriad-dreamin.tinymist"
+            ]
+        }
+    }
+}
