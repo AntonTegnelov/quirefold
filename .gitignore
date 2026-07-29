@@ -13,3 +13,7 @@ __pycache__/
 # IDE / tooling state
 .ropeproject/
 .canary_test
+
+# Claude Code worktrees and local overrides
+.claude/worktrees/
+.claude/settings.local.json
