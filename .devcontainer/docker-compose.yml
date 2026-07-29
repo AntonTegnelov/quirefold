@@ -12,5 +12,14 @@ services:
     volumes:
       - ..:/workspaces/quirefold:cached
       - ${USERPROFILE}/.ssh/authorized_keys:/tmp/host_authorized_keys:ro
+      # Home and sshd state on volumes so Claude Code login, git config, and
+      # the host-key fingerprint survive container recreates (e.g. Zed's dev
+      # container flow recreates on first attach).
+      - home:/home/vscode
+      - etc-ssh:/etc/ssh
     working_dir: /workspaces/quirefold
     restart: unless-stopped
+
+volumes:
+  home:
+  etc-ssh:
