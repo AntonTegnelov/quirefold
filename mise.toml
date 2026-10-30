@@ -1,0 +1,17 @@
+[tools]
+python = "3.12"
+node = "20"
+pandoc = "3.1.11"
+typst = "0.13.0"
+"npm:@mermaid-js/mermaid-cli" = "10.9.1"
+
+[env]
+_.python.venv = { path = "{{env.HOME}}/.venvs/quirefold", create = true }
+PUPPETEER_SKIP_DOWNLOAD = "true"
+PUPPETEER_EXECUTABLE_PATH = "/usr/bin/chromium"
+
+[hooks]
+postinstall = "pip install typst==0.13.0 pypdf pdf2image"
+
+[tasks.run]
+run = "bash ./run_pipeline.sh"
