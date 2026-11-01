@@ -17,3 +17,6 @@ __pycache__/
 # Claude Code worktrees and local overrides
 .claude/worktrees/
 .claude/settings.local.json
+
+# Claude Code config (local, not tracked)
+.claude/
